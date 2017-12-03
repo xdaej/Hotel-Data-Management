@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="assets/css/demo.css">
+    <style>
+        ul {list-style-type: none;
+      margin: 0;
+      padding: 0;
+      }
+        form {
+    border: 3px solid #f1f1f1;
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+        button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+        .container {
+    padding: 16px;
+}
+
+      </style>
+
 </head>
 <body>
 <meta charset="UTF-8">
@@ -21,8 +59,8 @@
       <!-- Username -->
       <label class="control-label"  for="username">Username</label>
       <div class="controls">
-        <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
-        <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+        <input type="text" id="username" name="username" placeholder="" >
+        <p class="help-block">Please input a username that has letters and numbers</p>
       </div>
     </div>
 
@@ -30,8 +68,8 @@
       <!-- E-mail -->
       <label class="control-label" for="email">E-mail</label>
       <div class="controls">
-        <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
-        <p class="help-block">Please provide your E-mail</p>
+        <input type="text" id="email" name="email" placeholder="" >
+        <p class="help-block">Please provide your e-mail address</p>
       </div>
     </div>
 
@@ -39,8 +77,8 @@
       <!-- Password-->
       <label class="control-label" for="password">Password</label>
       <div class="controls">
-        <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
-        <p class="help-block">Password should be at least 4 characters</p>
+        <input type="password" id="password" name="password" placeholder="" >
+        <p class="help-block">Please have at least 4 characters for your password</p>
       </div>
     </div>
 
@@ -48,7 +86,7 @@
       <!-- Password -->
       <label class="control-label"  for="password_confirm">Password (Confirm)</label>
       <div class="controls">
-        <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
+        <input type="password" id="password_confirm" name="password_confirm" placeholder="" >
         <p class="help-block">Please confirm password</p>
       </div>
     </div>
@@ -56,7 +94,7 @@
     <div class="control-group">
       <!-- Button -->
       <div class="controls">
-        <button class="btn btn-success">Register</button>
+          <button class="btn btn-success">Register</button><ul><li><a href="login.html">Already a User?</a></li></ul>
       </div>
     </div>
   </fieldset>
