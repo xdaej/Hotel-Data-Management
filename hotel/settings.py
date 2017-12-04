@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'registration',
+    'reservation',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -122,3 +124,6 @@ STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR,  'templates'),)
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'assets'), ]
+
+# Authentication
+LOGIN_URL = 'users:login'

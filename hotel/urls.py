@@ -18,9 +18,14 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 
 from registration import urls as registration_urls
+from reservation import urls as reservation_urls
+from users import urls as users_urls
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^registration/', include(registration_urls, namespace='registration')),
+    url(r'^registration/', include(registration_urls)),
+    url(r'^reservation/', include(reservation_urls)),
+    url(r'^users/', include(users_urls)),
     url(r'^$', TemplateView.as_view(template_name='layout.html'), name='home'),
 ]
