@@ -5,3 +5,6 @@ def hello_word(request):
 
 def login(request):
     return render(request, 'registration/../templates/login.html')
+
+def aboutus(request):
+    return render(request, 'aboutus.html')
