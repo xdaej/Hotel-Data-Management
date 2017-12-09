@@ -64,7 +64,6 @@
    }
 
 
-
    .center-text {
     position: relative;
     top: 50%;
@@ -119,6 +118,8 @@
   opacity: 1;
   right: 0;
 }
+
+
       </style>
   </head>
   <body>
@@ -127,12 +128,41 @@
 <ul>
     <li> <a href="{% url 'aboutus' %}">About Us</a></li>
     <li><a href="{% url 'registration' %}">Register</a></li>
-    <li><a href="{% url 'login' %}">Login</a></li>
+    <li> <a data-toggle="modal" data-target="#loginModal">Login</a></li>
     <li><a href="{% url 'reservation' %}">Make a Reservation</a></li>
     <li><a href="{% url 'review' %}">Leave a Review</a></li>
 </ul>
   </h1><br></div>
 
+   <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Login</h4>
+                <button type="button" class="close" data-dismiss="modal"> &times;</button>
+
+            </div>
+            <div class="modal-body">
+                   <form class="<form-in></form-in>line">
+                   <div class="form-group">
+                       <label class="sr-only" for="username">Username</label><input type="text" class="form-control input-sm" placeholder="Username" id="username" name="username">
+                       </div>
+                        <div class="form-group">
+
+                           <label class="sr-only" for="password">Password</label>
+                                     <input type="password" class="form-control input-sm" placeholder="Password" id="password" name="password"></div>
+                       <div class="checkbox">
+                       <label>
+                       <input type="checkbox"> Remember me
+                       </label>
+                         </div>
+                       <button type="submit" class="btn btn-info btn-xs">Sign in</button>
+                       <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Cancel</button>
+                   </form>
+            </div>
+        </div>
+        </div>
+   </div>
 <div class="center-text">
     <br><br><br><br>
     <h2>Best Holiday Deals of the Season </h2>
@@ -142,6 +172,9 @@
 </div>
 
 <button class="button" style="vertical-align:middle"><span>View Rooms </span></button>
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
