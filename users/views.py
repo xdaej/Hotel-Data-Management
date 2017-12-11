@@ -12,7 +12,7 @@ def login(request):
 
 
 
-def login(request):
+def login_page(request):
     return render(request,'users/login.html')
 
 def logout(request):
